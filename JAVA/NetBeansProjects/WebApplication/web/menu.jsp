@@ -1,17 +1,8 @@
-<%-- 
-    Document   : menu
-    Created on : 20 de ago. de 2025, 08:53:59
-    Author     : ccfel
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<h1>Modulo Cadastros </h1>
+<hr>
+<center>
+    <h2>Menu Principal </h2>  
+    <a href="${pageContext.request.contextPath}/UsuarioListar">Usuario</a>
+</center>
+<hr>

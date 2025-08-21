@@ -1,7 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 20 de ago. de 2025, 08:15:55
-    Author     : ccfel
---%>
+<%@taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core"%> <%--Importação da biblioteca JSTL Core--%>
+<jsp:include page = "home.jsp"/> <%--Inserindo a home.jsp --%>
 
-<%@taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core"%>

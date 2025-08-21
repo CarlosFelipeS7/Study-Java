@@ -1,17 +1,10 @@
-<%-- 
-    Document   : home
-    Created on : 20 de ago. de 2025, 08:54:27
-    Author     : ccfel
---%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+<jsp:include page="header.jsp"/>
+<jsp:include page="menu.jsp"/>
+
+<h1>Sistema Exemplo - CRUD</h1>
+
+<jsp:include page="footer.jsp"/>
