@@ -4,17 +4,25 @@
  */
 package ExSoma;
 
-/**
- *
- * @author ccfel
- */
+import java.util.Scanner;
+
+
 public class Principal {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Soma soma = new Soma();
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("Informe o primeiro numero: ");
+        int valor1 = ler.nextInt();
+        System.out.println("Informe o segundo numero");
+        int valor2 = ler.nextInt();
+        System.out.println("O valor da soma " + soma.soma(valor1, valor2));
+
+
     }
     
 }

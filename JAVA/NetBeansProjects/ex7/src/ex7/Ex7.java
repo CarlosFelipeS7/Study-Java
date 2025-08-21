@@ -32,7 +32,7 @@ public class Ex7 {
             System.out.println("A soma dos dois valores: " +n3);
         }
         else{
-            System.out.println("Os dois valores devem ser par");}
+            System.out.println("Os dois valores devem ser pares");}
     }
     
 }

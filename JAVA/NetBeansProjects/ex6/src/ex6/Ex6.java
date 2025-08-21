@@ -15,7 +15,7 @@ public class Ex6 {
      */
     public static void main(String[] args)   {
     float n3 = 0;
-    float n4 = 0;
+    
   
         for(int n1 = 1; n1 <100; n1++){
             if(n1%2!=0)

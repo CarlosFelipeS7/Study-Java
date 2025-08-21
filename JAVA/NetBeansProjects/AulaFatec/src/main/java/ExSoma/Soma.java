@@ -4,10 +4,8 @@
  */
 package ExSoma;
 
-/**
- *
- * @author ccfel
- */
+
+
 public class Soma {
     private int valor1, valor2, soma1;
     
