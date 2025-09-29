@@ -3,14 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/model/Estado.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/dao/EstadoDAO.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/estado/EstadoVerificarSigla.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioCadastrar.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioCarregar.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/estado/EstadoCadastrar.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioNovo.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/estado/EstadoListar.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/utils/banco.sql</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/cadastros/estados/estadoCadastrar.jsp</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/cadastros/estados/estadosListar.jsp</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/menu.jsp</file>
             <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/js/app.js</file>
             <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/js/jquery-3.3.1.min.js</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioVerificarCpf.java</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioVerificarEmail.java</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/dao/UsuarioDAO.java</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/web/cadastros/usuario/usuarioCadastrar.jsp</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioCadastrar.java</file>
-            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/usuario/UsuarioNovo.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/estado/EstadoCarregar.java</file>
+            <file>file:/C:/Users/ccfel/OneDrive/Meu%20Computador%20(Galaxy%20Book%204)/Documents/GitHub/Study-Java/JAVA/NetBeansProjects/WebApplication/src/java/br/com/aplcurso/controller/estado/EstadoExcluir.java</file>
         </group>
     </open-files>
 </project-private>
