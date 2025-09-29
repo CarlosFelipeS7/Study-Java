@@ -194,6 +194,23 @@ public class UsuarioDAO  implements GenericDAO{
     return false;
     }
     
+  
+    public boolean emailExiste(String email) {
+    boolean existe = false;
+    try {
+        String sql = "SELECT 1 FROM usuario WHERE email = ?";
+        PreparedStatement stmt = conexao.prepareStatement(sql);
+        stmt.setString(1, email);
+        ResultSet rs = stmt.executeQuery();
+        existe = rs.next();
+        rs.close();
+        stmt.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return existe;
+}
+
     
 }
 

@@ -19,58 +19,44 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author ccfel
- */
-@WebServlet(name = "UsuarioCadastrar", urlPatterns = {"/UsuarioCadastrar"})
+ */@WebServlet(name = "UsuarioCadastrar", urlPatterns = {"/UsuarioCadastrar"})
 public class UsuarioCadastrar extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+
         response.setContentType("text/html;charset=iso-8859-1");
-        try{
-        
+        try {
             UsuarioDAO dao = new UsuarioDAO();
-            
+
             int id = Integer.parseInt(request.getParameter("id"));
             String nome = request.getParameter("nome");
             Date dataNascimento = java.sql.Date.valueOf(request.getParameter("datanascimento"));
             String cpf = request.getParameter("cpf");
             String email = request.getParameter("email");
             String senha = request.getParameter("senha");
-            
-            //tratamento para o campo salario R$ 1.000,00
+
+            // tratamento para o campo salário
             String salarioStr = request.getParameter("salario");
-            //Remove "R$", espacos e pontos de milhar, troca virgula por ponto
-            salarioStr = salarioStr.replace("R$", "") //remove R$
-                    .replace(".", "") //remove ponto de milhar
-                    .replace(",", ".") //troca virgula por .
-                    .trim(); //remove espaccos extras
-        
-        double salario = Double.parseDouble(salarioStr);
-        
-            //Tratamento para o CPF
-            if(!DocumentoValidador.isDocumentoValido(cpf)){
-            
-                //verifica se cpf é valido
-                response.getWriter().write("3");
-            } else if(dao.cpfExiste(cpf) && id ==0){
-                //verifica se cpf ja esta cadastrado
-                response.getWriter().write("4");
-            } else if (nome.isEmpty() || nome.isBlank() || salario <= 0 || email.isBlank() ||
-                    email.isEmpty() || senha.isBlank() || senha.isEmpty()){
-                //verifica incosistencias em outros atributos do cadastro
-                response.getWriter().write("5");
-            } else{
-                //passou nas validacoes - grava dados
+            salarioStr = salarioStr.replace("R$", "")
+                                   .replace(".", "")
+                                   .replace(",", ".")
+                                   .trim();
+            double salario = Double.parseDouble(salarioStr);
+
+            // validações
+            if (!DocumentoValidador.isDocumentoValido(cpf)) {
+                response.getWriter().write("3"); // CPF inválido
+            } else if (dao.cpfExiste(cpf) && id == 0) {
+                response.getWriter().write("4"); // CPF já cadastrado
+            } else if (dao.emailExiste(email) && id == 0) {
+                response.getWriter().write("6"); // E-mail já cadastrado
+            } else if (nome.isEmpty() || nome.isBlank() ||
+                       salario <= 0 || email.isBlank() ||
+                       email.isEmpty() || senha.isBlank() || senha.isEmpty()) {
+                response.getWriter().write("5"); // campos em branco
+            } else {
+                // passou nas validações - grava dados
                 Usuario oUsuario = new Usuario();
                 oUsuario.setId(id);
                 oUsuario.setNome(nome);
@@ -79,58 +65,33 @@ public class UsuarioCadastrar extends HttpServlet {
                 oUsuario.setEmail(email);
                 oUsuario.setSenha(senha);
                 oUsuario.setSalario(salario);
-                
-                if(dao.cadastrar(oUsuario)){
-                    response.getWriter().write("1");
+
+                if (dao.cadastrar(oUsuario)) {
+                    response.getWriter().write("1"); // sucesso
                 } else {
-                    response.getWriter().write("0");
+                    response.getWriter().write("0"); // erro ao gravar
                 }
-   
             }
-        
-        }catch (Exception ex){
-            System.out.println("Problemas no Servleet ao cadastrar Usuario! Erro: " + ex.getMessage());
+
+        } catch (Exception ex) {
+            System.out.println("Problemas no Servlet ao cadastrar Usuario! Erro: " + ex.getMessage());
         }
-       
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
+        return "Servlet para cadastrar usuário";
+    }
 }

@@ -174,6 +174,17 @@ function validarCPF(cpf) {
 	return true;   
 }
 
-
+        //Validacao de Email    
+        function validarEmail(email){
+            console.log("Validando email: " + email);
+            
+            //Regex para formato de email
+            const regex = /^[A-zA-z0-9+_.-]@[A-Za-z0-9.-]+$/;
+            
+            if(!email || !regex.test(email)){
+                return false;
+            }
+            return true;
+        }
 
 
